@@ -1,1 +1,2 @@
-# [Naurose Farhan](https://naurose.github.io/)
+## Naurose Farhan
+# [naurose.github.io](https://naurose.github.io/)
