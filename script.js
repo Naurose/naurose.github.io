@@ -1,4 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Silently precache all theme images in the background to ensure instantaneous zero-latency switching
+    const preloadImages = [
+        "Images/artwork-7141130.png",
+        "Images/painting-mountain-lake-with-mountain-background.jpg",
+        "Images/valley-of-the-five-lakes-first-lake-canada.jpg",
+        "Images/colorful-blue-pink-5k-8k-3840x2160-900.jpg",
+        "Images/gta-6-teaser-3840x2160-13559.png",
+        "Images/lakeside-pink-sky-sunset-minimal-art-gradient-background-3840x2160-4584.png",
+        "Images/misurina-sunset.jpg",
+        "Images/background.jpeg"
+    ];
+    preloadImages.forEach(src => {
+        const img = new Image();
+        img.src = src;
+    });
+
     const themeBtn = document.getElementById('theme-btn');
     let currentThemeIndex = 0;
     // We have 8 states:

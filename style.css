@@ -65,56 +65,56 @@
 
 :root {
   --primary-color: #00ced1;
-  --bg-image: url("artwork-7141130.png");
+  --bg-image: url("Images/artwork-7141130.png");
   --glass-bg: rgba(255, 255, 255, 0.75);
   --glass-blur: blur(25px);
 }
 
 body.theme-1 {
   --primary-color: #20b2aa;
-  --bg-image: url("painting-mountain-lake-with-mountain-background.jpg");
+  --bg-image: url("Images/painting-mountain-lake-with-mountain-background.jpg");
   --glass-bg: rgba(255, 255, 255, 0.75);
   --glass-blur: blur(25px);
 }
 
 body.theme-2 {
   --primary-color: #ff8c00;
-  --bg-image: url("valley-of-the-five-lakes-first-lake-canada.jpg");
+  --bg-image: url("Images/valley-of-the-five-lakes-first-lake-canada.jpg");
   --glass-bg: rgba(255, 255, 255, 0.75);
   --glass-blur: blur(25px);
 }
 
 body.theme-3 {
   --primary-color: #ff1493;
-  --bg-image: url("colorful-blue-pink-5k-8k-3840x2160-900.jpg");
+  --bg-image: url("Images/colorful-blue-pink-5k-8k-3840x2160-900.jpg");
   --glass-bg: rgba(255, 255, 255, 0.75);
   --glass-blur: blur(25px);
 }
 
 body.theme-4 {
   --primary-color: #ff69b4;
-  --bg-image: url("gta-6-teaser-3840x2160-13559.png");
+  --bg-image: url("Images/gta-6-teaser-3840x2160-13559.png");
   --glass-bg: rgba(255, 255, 255, 0.75);
   --glass-blur: blur(25px);
 }
 
 body.theme-5 {
   --primary-color: #ff4500;
-  --bg-image: url("lakeside-pink-sky-sunset-minimal-art-gradient-background-3840x2160-4584.png");
+  --bg-image: url("Images/lakeside-pink-sky-sunset-minimal-art-gradient-background-3840x2160-4584.png");
   --glass-bg: rgba(255, 255, 255, 0.75);
   --glass-blur: blur(25px);
 }
 
 body.theme-6 {
   --primary-color: #dc143c;
-  --bg-image: url("misurina-sunset.jpg");
+  --bg-image: url("Images/misurina-sunset.jpg");
   --glass-bg: rgba(255, 255, 255, 0.75);
   --glass-blur: blur(25px);
 }
 
 body.theme-7 {
   --primary-color: salmon;
-  --bg-image: url("background.jpeg");
+  --bg-image: url("Images/background.jpeg");
   --glass-bg: rgba(255, 255, 255, 0.25);
   --glass-blur: blur(15px);
 }
