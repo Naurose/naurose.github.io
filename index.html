@@ -105,21 +105,48 @@
                         <div class="subsection-heading">CSE370: Database Systems</div>
                         
                         <div style="font-size: 15px; font-weight: 800; color: #111; margin-top: 15px; margin-bottom: 5px; text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 1px 2px rgba(255, 255, 255, 1);">
-                            GameVault DBMS
+                            Project Title: GameVault - Digital Storefront DBMS
                         </div>
                         
                         <p align="justify" style="font-size: 13.5px; line-height: 1.5; color: #111; font-weight: 500; text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 1px 2px rgba(255, 255, 255, 1); margin-bottom: 12px;">
-                            GameVault is a full-stack web application designed for discovering, buying and renting digital video games. The application is categorized as a digital distribution platform for PC gaming. The website connects a frontend user interface to a backend server and a MySQL database. The project integrates core e-commerce features, enabling users to browse a diverse game catalog and choose between two purchasing options: buy or rent. For rentals, users can choose from three different duration options. Additionally, the platform promotes community engagement through a dedicated newsfeed that delivers the latest gaming articles. The standout feature of GameVault’s marketplace is the renting system of games. Traditional PC gaming storefronts, such as Steam and Epic Games, offer only the option to buy games at full price. GameVault offers not only the option to buy but also the ability to rent games for 7, 14, or 30 days, with rental prices adjusted based on the game’s full price. This system enables users to experience a game for the specified days before deciding whether to make a permanent purchase to keep the game in their library. The web application is built using HTML for structure, CSS3 for styling, and JavaScript for logic. The Node.js server handles user requests and processes them based on the data stored in the MySQL database.
+                            GameVault is a full-stack web application for discovering, purchasing, and renting digital video games. Built as a database-driven digital storefront, the platform integrates a dynamic frontend with a Node.js and Express backend, a MySQL database, and RAWG API-powered game catalog data.<br>
+                            It supports both permanent purchases and a subscription-per-game rental model, allowing users to browse games, choose between buy and rent options, manage a cart, and access purchased or rented titles through a personalized library. Each game is presented through a dedicated details page featuring metadata, description, community rating, GameVault's own review system, and purchase options.
+                        </p>
+
+                        <div style="font-size: 14px; font-weight: 800; color: #111; margin-bottom: 3px; text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 1px 2px rgba(255, 255, 255, 1);">
+                            Core Features:
+                        </div>
+                        <p style="font-size: 13.5px; line-height: 1.5; color: #111; font-weight: 500; margin-bottom: 12px; text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 1px 2px rgba(255, 255, 255, 1);">
+                            • API-powered game catalog using RAWG data, displayed through dynamic game cards<br>
+                            • Individual game details pages with descriptions, ratings, reviews, and purchase options<br>
+                            • Dual transaction model: permanent purchase and time-based game renting<br>
+                            • Cart and checkout flow for both purchased and rented games<br>
+                            • Personalized user library with rental duration tracking<br>
+                            • User authentication, profile management, and account settings<br>
+                            • Ratings and review system for user-generated feedback<br>
+                            • Notifications and alerts system<br>
+                            • Integrated gaming newsfeed
+                        </p>
+
+                        <div style="font-size: 14px; font-weight: 800; color: #111; margin-bottom: 3px; text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 1px 2px rgba(255, 255, 255, 1);">
+                            Technical Highlights:
+                        </div>
+                        <p align="justify" style="font-size: 13.5px; line-height: 1.5; color: #111; font-weight: 500; margin-bottom: 12px; text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 1px 2px rgba(255, 255, 255, 1);">
+                            • Designed and managed a relational database for users, games, transactions, rentals, reviews, and profile data<br>
+                            • Connected third-party API data with internally managed platform features<br>
+                            • Implemented protected authentication flows and user-specific data handling<br>
+                            • Built end-to-end CRUD functionality across reviews, accounts, library data, and purchase workflows<br>
+                            • Combined e-commerce logic with database-backed personalization features
                         </p>
                         
-                        <div style="font-size: 13.5px; line-height: 1.5; color: #111; font-weight: 500; margin-bottom: 12px; text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 1px 2px rgba(255, 255, 255, 1);">
-                            Technology Stack: HTML, CSS, Express, Node.js, JavaScript, MySQL, JWT
+                        <div style="font-size: 14px; line-height: 1.5; color: #111; font-weight: 500; margin-bottom: 12px; text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 1px 2px rgba(255, 255, 255, 1);">
+                            <b>Technology Stack:</b> HTML, CSS, JavaScript, Node.js, Express, MySQL, JWT
                         </div>
                         
-                        <div style="font-size: 13.5px; font-weight: 500; color: #111; text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 1px 2px rgba(255, 255, 255, 1);">
-                            <b>Project Report:</b> <a href="https://docs.google.com/document/d/1navsN7pjFZs3VU1BHaPsxIPrtNk6TZBHb8NWYiEJ3wQ/edit?usp=sharing" target="_blank">Documentation</a>
-                            <span style="font-weight: 800; margin: 0 4px;">/</span>
+                        <div style="font-size: 14px; font-weight: 500; color: #111; text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 1px 2px rgba(255, 255, 255, 1);">
                             <b>Github:</b> <a href="https://github.com/Naurose/Project-GameVault" target="_blank">Project-GameVault</a>
+                            <span style="font-weight: 800; margin: 0 4px;">/</span>
+                            <b>Project Report:</b> <a href="https://docs.google.com/document/d/1navsN7pjFZs3VU1BHaPsxIPrtNk6TZBHb8NWYiEJ3wQ/edit?usp=sharing" target="_blank">Documentation</a>
                         </div>
                         
                         <hr class="frosted-line">
@@ -127,7 +154,7 @@
                         <div class="subsection-heading">CSE422: Artificial Intelligence</div>
                         
                         <div style="font-size: 15px; font-weight: 800; color: #111; margin-top: 15px; margin-bottom: 5px; text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 1px 2px rgba(255, 255, 255, 1);">
-                            Project: Predicting the Severity of Depression using Machine Learning Models
+                            Project Title: Predicting the Severity of Depression using Machine Learning Models
                         </div>
                         
                         <p align="justify" style="font-size: 13.5px; line-height: 1.5; color: #111; font-weight: 500; text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 1px 2px rgba(255, 255, 255, 1); margin-bottom: 12px;">
@@ -151,11 +178,99 @@
                         <p align="justify" style="font-size: 13.5px; line-height: 1.5; color: #111; font-weight: 500; margin-bottom: 12px; text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 1px 2px rgba(255, 255, 255, 1);">
                             Multiple evaluation metrics were used to compare the models. Accuracy was shown as an overall score, while macro-averaged precision, recall, and F1-score were reported to account for class imbalance. Confusion matrices were plotted for each model to visualize per-class performance. Multiclass ROC curves were generated using the One-vs-Rest approach and AUC scores were computed for comparing classifier separability. The accuracy comparison shows that Logistic Regression achieved the highest accuracy. Random Forest and Neural Network achieved moderate performance. Lastly, Naive Bayes and KNN showed comparatively lower accuracy.
                         </p>
+                                                
+                        <div style="font-size: 14px; line-height: 1.5; color: #111; font-weight: 500; margin-bottom: 12px; text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 1px 2px rgba(255, 255, 255, 1);">
+                            <b>Technology Stack:</b> Python, NumPy, Pandas, Matplotlib, Seaborn, Scikit-Learn
+                        </div>
                         
-                        <div style="font-size: 13.5px; font-weight: 500; color: #111; text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 1px 2px rgba(255, 255, 255, 1);">
-                            <b>Project Report:</b> <a href="https://docs.google.com/document/d/1f3c9sqmK_EwR2kjK_YFsZMcjz_n4cZShvoiecc1gkwQ/edit?tab=t.0" target="_blank">Documentation</a>
-                            <span style="font-weight: 800; margin: 0 4px;">/</span>
+                        <div style="font-size: 14px; font-weight: 500; color: #111; text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 1px 2px rgba(255, 255, 255, 1);">
                             <b>Github:</b> <a href="https://github.com/Naurose/Predicting-the-Severity-of-Depression-using-Machine-Learning-Models" target="_blank">AI Project</a>
+                            <span style="font-weight: 800; margin: 0 4px;">/</span>
+                            <b>Project Report:</b> <a href="https://docs.google.com/document/d/1f3c9sqmK_EwR2kjK_YFsZMcjz_n4cZShvoiecc1gkwQ/edit?tab=t.0" target="_blank">Documentation</a>
+                        </div>
+
+                        <hr class="frosted-line">
+                        
+                        <div style="font-size: 15px; font-weight: 800; color: #111; margin-top: 15px; margin-bottom: 5px; text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 1px 2px rgba(255, 255, 255, 1);">
+                            Project Title: Traffic Sign Classification using CNNs
+                        </div>
+                        
+                        <p align="justify" style="font-size: 13.5px; line-height: 1.5; color: #111; font-weight: 500; text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 1px 2px rgba(255, 255, 255, 1); margin-bottom: 12px;">
+                            Developed a deep learning-based traffic sign recognition system using TensorFlow and Keras, built to classify road sign images across 43 categories from the German Traffic Sign Recognition Benchmark (GTSRB). The project focuses on constructing a complete image classification pipeline, from preprocessing and model design to training, validation, and test-time prediction.
+                        </p>
+                        
+                        <div style="font-size: 14px; font-weight: 800; color: #111; margin-bottom: 3px; text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 1px 2px rgba(255, 255, 255, 1);">
+                            Model Training & Testing:
+                        </div>
+                        <p style="font-size: 13.5px; line-height: 1.5; color: #111; font-weight: 500; margin-bottom: 12px; text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 1px 2px rgba(255, 255, 255, 1);">
+                            • Built and trained a custom Convolutional Neural Network (CNN) for multiclass image classification<br>
+                            • Preprocessed raw image data by standardizing variable image dimensions to 50x50 and normalizing pixel values<br>
+                            • Split the dataset into training and validation sets to support supervised learning and performance monitoring<br>
+                            • Generated predictions on test images to assess classification behavior on unseen data
+                        </p>
+                        
+                        <div style="font-size: 14px; font-weight: 800; color: #111; margin-bottom: 3px; text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 1px 2px rgba(255, 255, 255, 1);">
+                            Model Analysis:
+                        </div>
+                        <p style="font-size: 13.5px; line-height: 1.5; color: #111; font-weight: 500; margin-bottom: 12px; text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 1px 2px rgba(255, 255, 255, 1);">
+                            • Worked with a large-scale benchmark dataset containing 50,000+ traffic sign images across 43 classes<br>
+                            • Monitored model learning through training and validation accuracy/loss visualization<br>
+                            • Leveraged convolutional layers for automated visual feature extraction from traffic sign imagery<br>
+                            • Explored a practical computer vision application relevant to intelligent transportation and driver assistance systems
+                        </p>
+                        
+                        <div style="font-size: 14px; line-height: 1.5; color: #111; font-weight: 500; margin-bottom: 12px; text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 1px 2px rgba(255, 255, 255, 1);">
+                            <b>Technology Stack:</b> Python, TensorFlow, Keras, CNN, NumPy, Pandas, Matplotlib
+                        </div>
+                        
+                        <div style="font-size: 14px; font-weight: 500; color: #111; text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 1px 2px rgba(255, 255, 255, 1);">
+                            <b>Github:</b> <a href="https://github.com/Naurose/Traffic-Sign-Classification" target="_blank">Project Repository</a>
+                        </div>
+
+                        <hr class="frosted-line">
+
+                        <div class="subsection-heading">CSE321: Operating Systems</div>
+                        
+                        <div style="font-size: 15px; font-weight: 800; color: #111; margin-top: 15px; margin-bottom: 5px; text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 1px 2px rgba(255, 255, 255, 1);">
+                            Project Title: Multithreaded Process Manager Simulator
+                        </div>
+                        
+                        <p align="justify" style="font-size: 13.5px; line-height: 1.5; color: #111; font-weight: 500; text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 1px 2px rgba(255, 255, 255, 1); margin-bottom: 12px;">
+                            Developed a multithreaded process manager simulator in C that models how an operating system maintains and synchronizes its internal process table. The project uses Process Control Blocks (PCBs) to represent process metadata and lifecycle transitions, while multiple worker threads concurrently perform operations such as process creation, termination, waiting, and table inspection.<br>
+                            The system was designed to preserve correctness under concurrent access by synchronizing modifications to shared process data and coordinating parent-child interactions during wait and wake-up events. A dedicated monitor thread automatically captures and logs table snapshots whenever the process table changes, making concurrent activity observable in real time without inefficient polling.
+                        </p>
+                        
+                        <div style="font-size: 14px; font-weight: 800; color: #111; margin-bottom: 3px; text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 1px 2px rgba(255, 255, 255, 1);">
+                            System Features:
+                        </div>
+                        <p style="font-size: 13.5px; line-height: 1.5; color: #111; font-weight: 500; margin-bottom: 12px; text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 1px 2px rgba(255, 255, 255, 1);">
+                            • Shared process table supporting up to 64 simulated processes<br>
+                            • PCB-driven process representation with PID, PPID, state, exit status, and child tracking<br>
+                            • Support for core process operations: fork, exit, wait, kill, and ps<br>
+                            • Script-based worker threads for concurrent execution of process management commands<br>
+                            • Dedicated monitor thread for automatic process table snapshot logging<br>
+                            • Process lifecycle tracking across running, waiting, zombie, and reaped states
+                        </p>
+                        
+                        <div style="font-size: 14px; font-weight: 800; color: #111; margin-bottom: 3px; text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 1px 2px rgba(255, 255, 255, 1);">
+                            Concurrency & Synchronization:
+                        </div>
+                        <p style="font-size: 13.5px; line-height: 1.5; color: #111; font-weight: 500; margin-bottom: 12px; text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 1px 2px rgba(255, 255, 255, 1);">
+                            • Synchronized shared access to the global process table under multithreaded execution<br>
+                            • Coordinated parent-child waiting and wake-up behavior during process termination<br>
+                            • Prevented race conditions during concurrent creation, modification, and cleanup of PCB entries<br>
+                            • Implemented event-driven monitoring to log updates without busy polling<br>
+                            • Simulated OS-style process cleanup and zombie reaping behavior under concurrent workloads
+                        </p>
+                        
+                        <div style="font-size: 14px; line-height: 1.5; color: #111; font-weight: 500; margin-bottom: 12px; text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 1px 2px rgba(255, 255, 255, 1);">
+                            <b>Technology Stack:</b> C, POSIX Threads (pthreads), Synchronization Primitives, File I/O
+                        </div>
+                        
+                        <div style="font-size: 14px; font-weight: 500; color: #111; text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 1px 2px rgba(255, 255, 255, 1);">
+                            <b>Github:</b> <a href="https://github.com/Naurose/CSE321-Lab-Project" target="_blank">OS-Project</a>
+                            <span style="font-weight: 800; margin: 0 4px;">/</span>
+                            <b>Project Document:</b> <a href="https://docs.google.com/document/d/1lxRDbEvHMcb7XQmEI2dMKEo7o4IMD-BVa0nx0n0AA1M/edit?usp=sharing" target="_blank">OS Specifications</a>
                         </div>
                     </div>
 
@@ -165,6 +280,14 @@
                         <p>
                             <i>Thesis Research: <b>Applied AI in Cryptography for Metaverse environment</b></i>
                             <br><br><i>Research details will be updated soon...</i>
+                        </p>
+                    </div>
+                    
+                    <!-- Certifications Section -->
+                    <div class="section-box" id="certifications">
+                        <heading>Certifications</heading>
+                        <p>
+                            <i>Certifications will be uploaded soon...</i>
                         </p>
                     </div>
 
@@ -232,7 +355,16 @@
                                 <span style="color: #111; font-size: 8px; padding-top: 2px;">•</span>
                                 <span>Django</span>
                             </div>
-
+                            
+                            <div style="font-size: 14.5px; font-weight: 800; color: #111; margin-top: 15px; margin-bottom: 4px; text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 1px 2px rgba(255, 255, 255, 1);">
+                                Version Control:
+                            </div>
+                            <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 6px; font-size: 14.5px; font-weight: 500; color: #111; text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 1px 2px rgba(255, 255, 255, 1);">
+                                <span>Git</span>
+                                <span style="color: #111; font-size: 8px; padding-top: 2px;">•</span>
+                                <span>GitHub</span>
+                            </div>
+                            
                             <div style="font-size: 14.5px; font-weight: 800; color: #111; margin-top: 15px; margin-bottom: 4px; text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 1px 2px rgba(255, 255, 255, 1);">
                                 Game Development:
                             </div>
@@ -241,15 +373,8 @@
                                 <span style="color: #111; font-size: 8px; padding-top: 2px;">•</span>
                                 <span>Unreal Engine</span>
                             </div>
+                            
                         </div>
-                    </div>
-
-                    <!-- Misc Section -->
-                    <div class="section-box" id="misc">
-                        <heading>Miscellaneous</heading>
-                        <p>
-                            <i>Miscellaneous info will be updated soon...</i>
-                        </p>
                     </div>
 
                     <!-- Co-curricular Activities Section -->
@@ -257,6 +382,14 @@
                         <heading>Co-Curricular Activities</heading>
                         <p>
                             <i>Co-curricular Activities will be updated soon...</i>
+                        </p>
+                    </div>
+                    
+                    <!-- Misc Section -->
+                    <div class="section-box" id="misc">
+                        <heading>Miscellaneous</heading>
+                        <p>
+                            <i>Miscellaneous info will be updated soon...</i>
                         </p>
                     </div>
 
