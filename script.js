@@ -65,4 +65,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize and set interval for real-time ticking
     updateBDTime();
     setInterval(updateBDTime, 1000);
+
+    // Back to Top Button Logic
+    const toTopBtn = document.getElementById('to-top-btn');
+    const logoIcon = document.getElementById('logo-icon');
+    const upArrowIcon = document.getElementById('up-arrow-icon');
+    
+    if (toTopBtn) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                toTopBtn.classList.add('scrolled');
+            } else {
+                toTopBtn.classList.remove('scrolled');
+            }
+        });
+
+        toTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            // Clear the URL hash without reloading the page
+            history.replaceState(null, null, window.location.pathname + window.location.search);
+        });
+    }
 });
