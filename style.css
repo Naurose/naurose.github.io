@@ -65,58 +65,65 @@
 
 :root {
   --primary-color: #00ced1;
-  --bg-image: url("Images/artwork-7141130.png");
+  --bg-image: url("Images/gradient_walls (0).png");
   --glass-bg: rgba(255, 255, 255, 0.75);
   --glass-blur: blur(25px);
 }
 
 body.theme-1 {
-  --primary-color: #20b2aa;
-  --bg-image: url("Images/painting-mountain-lake-with-mountain-background.jpg");
+  --primary-color: #7bc0ff;
+  --bg-image: url("Images/gradient_walls (1).jpg");
   --glass-bg: rgba(255, 255, 255, 0.75);
   --glass-blur: blur(25px);
 }
 
 body.theme-2 {
-  --primary-color: #ff8c00;
-  --bg-image: url("Images/valley-of-the-five-lakes-first-lake-canada.jpg");
+  --primary-color: #7bd3ff;
+  --bg-image: url("Images/gradient_walls (2).jpg");
   --glass-bg: rgba(255, 255, 255, 0.75);
   --glass-blur: blur(25px);
 }
 
 body.theme-3 {
-  --primary-color: #ff1493;
-  --bg-image: url("Images/colorful-blue-pink-5k-8k-3840x2160-900.jpg");
+  --primary-color: #9ed1f5;
+  --bg-image: url("Images/gradient_walls (3).jpg");
   --glass-bg: rgba(255, 255, 255, 0.75);
   --glass-blur: blur(25px);
 }
 
 body.theme-4 {
-  --primary-color: #ff69b4;
-  --bg-image: url("Images/gta-6-teaser-3840x2160-13559.png");
+  --primary-color: #c2cbd0;
+  --bg-image: url("Images/gradient_walls (4).jpg");
   --glass-bg: rgba(255, 255, 255, 0.75);
   --glass-blur: blur(25px);
 }
 
 body.theme-5 {
-  --primary-color: #ff4500;
-  --bg-image: url("Images/lakeside-pink-sky-sunset-minimal-art-gradient-background-3840x2160-4584.png");
+  --primary-color: #d57bff;
+  --bg-image: url("Images/gradient_walls (5).jpg");
   --glass-bg: rgba(255, 255, 255, 0.75);
   --glass-blur: blur(25px);
 }
 
 body.theme-6 {
-  --primary-color: #dc143c;
-  --bg-image: url("Images/misurina-sunset.jpg");
+  --primary-color: #b3b3f5;
+  --bg-image: url("Images/gradient_walls (6).jpg");
   --glass-bg: rgba(255, 255, 255, 0.75);
   --glass-blur: blur(25px);
 }
 
 body.theme-7 {
-  --primary-color: salmon;
-  --bg-image: url("Images/background.jpeg");
-  --glass-bg: rgba(255, 255, 255, 0.25);
-  --glass-blur: blur(15px);
+  --primary-color: #8c9eff;
+  --bg-image: url("Images/gradient_walls (7).jpg");
+  --glass-bg: rgba(255, 255, 255, 0.75);
+  --glass-blur: blur(25px);
+}
+
+body.theme-8 {
+  --primary-color: #8bc2f5;
+  --bg-image: url("Images/gradient_walls (8).jpg");
+  --glass-bg: rgba(255, 255, 255, 0.75);
+  --glass-blur: blur(25px);
 }
 
 * {

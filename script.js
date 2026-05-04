@@ -1,14 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Silently precache all theme images in the background to ensure instantaneous zero-latency switching
     const preloadImages = [
-        "Images/artwork-7141130.png",
-        "Images/painting-mountain-lake-with-mountain-background.jpg",
-        "Images/valley-of-the-five-lakes-first-lake-canada.jpg",
-        "Images/colorful-blue-pink-5k-8k-3840x2160-900.jpg",
-        "Images/gta-6-teaser-3840x2160-13559.png",
-        "Images/lakeside-pink-sky-sunset-minimal-art-gradient-background-3840x2160-4584.png",
-        "Images/misurina-sunset.jpg",
-        "Images/background.jpeg"
+        "Images/gradient_walls (0).png",
+        "Images/gradient_walls (1).jpg",
+        "Images/gradient_walls (2).jpg",
+        "Images/gradient_walls (3).jpg",
+        "Images/gradient_walls (4).jpg",
+        "Images/gradient_walls (5).jpg",
+        "Images/gradient_walls (6).jpg",
+        "Images/gradient_walls (7).jpg",
+        "Images/gradient_walls (8).jpg"
     ];
     preloadImages.forEach(src => {
         const img = new Image();
@@ -17,9 +18,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const themeBtn = document.getElementById('theme-btn');
     let currentThemeIndex = 0;
-    // We have 8 states:
+    // We have 9 states:
     // 0 = Default setup
-    // 1 to 7 = theme-X classes
+    // 1 to 8 = theme-X classes
     const themes = [
         '', 
         'theme-1', 
@@ -28,7 +29,8 @@ document.addEventListener('DOMContentLoaded', () => {
         'theme-4', 
         'theme-5', 
         'theme-6', 
-        'theme-7'
+        'theme-7',
+        'theme-8'
     ];
 
     themeBtn.addEventListener('click', () => {
