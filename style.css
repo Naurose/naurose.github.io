@@ -64,64 +64,57 @@
 }
 
 :root {
-  --primary-color: #00ced1;
-  --bg-image: url("Images/gradient_walls (0).png");
+  --primary-color: #7b96e2;
+  --btn-color: #aabfed;
+  --bg-image: url("Images/gradient_walls (0).jpg");
   --glass-bg: rgba(255, 255, 255, 0.75);
   --glass-blur: blur(25px);
 }
 
 body.theme-1 {
-  --primary-color: #7bc0ff;
-  --bg-image: url("Images/gradient_walls (1).jpg");
+  --primary-color: #00ced1;
+  --btn-color: #00ced1;
+  --bg-image: url("Images/gradient_walls (1).png");
   --glass-bg: rgba(255, 255, 255, 0.75);
   --glass-blur: blur(25px);
 }
 
 body.theme-2 {
-  --primary-color: #7bd3ff;
+  --primary-color: #7bc0ff;
+  --btn-color: #7bc0ff;
   --bg-image: url("Images/gradient_walls (2).jpg");
   --glass-bg: rgba(255, 255, 255, 0.75);
   --glass-blur: blur(25px);
 }
 
 body.theme-3 {
-  --primary-color: #9ed1f5;
+  --primary-color: #7bd3ff;
+  --btn-color: #7bd3ff;
   --bg-image: url("Images/gradient_walls (3).jpg");
   --glass-bg: rgba(255, 255, 255, 0.75);
   --glass-blur: blur(25px);
 }
 
 body.theme-4 {
-  --primary-color: #c2cbd0;
+  --primary-color: #9ed1f5;
+  --btn-color: #9ed1f5;
   --bg-image: url("Images/gradient_walls (4).jpg");
   --glass-bg: rgba(255, 255, 255, 0.75);
   --glass-blur: blur(25px);
 }
 
 body.theme-5 {
-  --primary-color: #d57bff;
+  --primary-color: #c2cbd0;
+  --btn-color: #c2cbd0;
   --bg-image: url("Images/gradient_walls (5).jpg");
   --glass-bg: rgba(255, 255, 255, 0.75);
   --glass-blur: blur(25px);
 }
 
 body.theme-6 {
-  --primary-color: #b3b3f5;
-  --bg-image: url("Images/gradient_walls (6).jpg");
-  --glass-bg: rgba(255, 255, 255, 0.75);
-  --glass-blur: blur(25px);
-}
-
-body.theme-7 {
   --primary-color: #8c9eff;
-  --bg-image: url("Images/gradient_walls (7).jpg");
-  --glass-bg: rgba(255, 255, 255, 0.75);
-  --glass-blur: blur(25px);
-}
-
-body.theme-8 {
-  --primary-color: #8bc2f5;
-  --bg-image: url("Images/gradient_walls (8).jpg");
+  --btn-color: #8c9eff;
+  --bg-image: url("Images/gradient_walls (6).jpg");
   --glass-bg: rgba(255, 255, 255, 0.75);
   --glass-blur: blur(25px);
 }
@@ -289,6 +282,84 @@ img.profile-pic {
   text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 1px 2px rgba(255, 255, 255, 1);
 }
 
+/* Fluid Hover/Tap Expandable Drawer for Project Details */
+.project-card {
+  position: relative;
+  transition: background-color 0.3s ease;
+  border-radius: 8px;
+}
+
+/* Base (closed) state - applied when mouse moves away */
+.project-drawer {
+  display: grid;
+  grid-template-rows: 0fr;
+  /* 3s delay before collapsing after mouse leaves */
+  transition: grid-template-rows 0.45s cubic-bezier(0.4, 0, 0.2, 1) 3s;
+}
+
+.project-drawer-inner {
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-6px);
+  /* 3s delay before fading out after mouse leaves */
+  transition: opacity 0.35s ease 3s, transform 0.35s ease 3s;
+}
+
+/* Open state on hover or tap - opens INSTANTLY with 0s delay */
+.project-card:hover .project-drawer,
+.project-card.is-open .project-drawer {
+  grid-template-rows: 1fr;
+  transition-delay: 0s;
+}
+
+.project-card:hover .project-drawer-inner,
+.project-card.is-open .project-drawer-inner {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0s;
+}
+
+/* Subtle interactive pill indicator */
+.drawer-toggle-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #111;
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  user-select: none;
+  /* Pill styling and arrow revert after 3s delay */
+  transition: all 0.3s ease 3s;
+  text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.drawer-toggle-hint i {
+  font-size: 14px;
+  transition: transform 0.35s ease 3s, color 0.35s ease 3s;
+}
+
+.project-card:hover .drawer-toggle-hint,
+.project-card.is-open .drawer-toggle-hint {
+  background: rgba(255, 255, 255, 0.75);
+  border-color: var(--primary-color);
+  color: #000;
+  transition-delay: 0s;
+}
+
+.project-card:hover .drawer-toggle-hint i,
+.project-card.is-open .drawer-toggle-hint i {
+  transform: rotate(180deg);
+  color: var(--primary-color);
+  transition-delay: 0s;
+}
+
 .frosted-line {
     border: 0;
     height: 2px;
@@ -314,9 +385,9 @@ img.profile-pic {
 .btn {
     display: inline-block;
     padding: 13px 25px;
-    background: var(--primary-color);
+    background: var(--btn-color);
     color: #333;
-    border: 2px solid var(--primary-color);
+    border: 2px solid var(--btn-color);
     border-radius: 40px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     font-weight: 500;
@@ -343,7 +414,7 @@ img.profile-pic {
     color: #000000;
     font-size: 17px;
     margin: 0 6px;
-    border: 2px solid var(--primary-color);
+    border: 2px solid var(--btn-color);
     border-radius: 40px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     text-decoration: none;
@@ -357,7 +428,7 @@ img.profile-pic {
   width: 55px;
   height: 55px;
   border-radius: 50%;
-  background: var(--primary-color);
+  background: var(--btn-color);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border: 3px solid #fff;

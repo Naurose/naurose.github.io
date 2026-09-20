@@ -1,15 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Silently precache all theme images in the background to ensure instantaneous zero-latency switching
     const preloadImages = [
-        "Images/gradient_walls (0).png",
-        "Images/gradient_walls (1).jpg",
+        "Images/gradient_walls (0).jpg",
+        "Images/gradient_walls (1).png",
         "Images/gradient_walls (2).jpg",
         "Images/gradient_walls (3).jpg",
         "Images/gradient_walls (4).jpg",
         "Images/gradient_walls (5).jpg",
-        "Images/gradient_walls (6).jpg",
-        "Images/gradient_walls (7).jpg",
-        "Images/gradient_walls (8).jpg"
+        "Images/gradient_walls (6).jpg"
     ];
     preloadImages.forEach(src => {
         const img = new Image();
@@ -18,9 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const themeBtn = document.getElementById('theme-btn');
     let currentThemeIndex = 0;
-    // We have 9 states:
+    // We have 7 states:
     // 0 = Default setup
-    // 1 to 8 = theme-X classes
+    // 1 to 6 = theme-X classes
     const themes = [
         '', 
         'theme-1', 
@@ -28,9 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'theme-3', 
         'theme-4', 
         'theme-5', 
-        'theme-6', 
-        'theme-7',
-        'theme-8'
+        'theme-6'
     ];
 
     themeBtn.addEventListener('click', () => {
@@ -88,4 +84,16 @@ document.addEventListener('DOMContentLoaded', () => {
             history.replaceState(null, null, window.location.pathname + window.location.search);
         });
     }
+
+    // Project card tap/click toggle for touch screens & mobile
+    const projectCards = document.querySelectorAll('.project-card');
+    projectCards.forEach(card => {
+        const toggleHint = card.querySelector('.drawer-toggle-hint');
+        if (toggleHint) {
+            toggleHint.addEventListener('click', (e) => {
+                e.stopPropagation();
+                card.classList.toggle('is-open');
+            });
+        }
+    });
 });
